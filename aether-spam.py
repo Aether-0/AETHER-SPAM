@@ -152,7 +152,7 @@ if __name__ == "__main__":
 [Telegram : @a37h3r]
 [Github   : https://github.com/ZawwanZ/]
 [Facebook : https://www.facebook.com/Phoenixop0]
-[For Tip  : 09977832863(Ooredoo)]
+
 
 [#]""" + Fore.RED + r""" This tool serves an educational purpose exclusively, and I'm indifferent to any alternative outcomes or consequences.
 """ + Fore.RESET)
