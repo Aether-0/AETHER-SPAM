@@ -141,16 +141,41 @@ data = {}
 if __name__ == "__main__":
     # Banner
     print(random.choice(colors) + r"""
-   ___   ____________ _________      _______  ___   __  ___
-  / _ | / __/_  __/ // / __/ _ \____/ __/ _ \/ _ | /  |/  /
- / __ |/ _/  / / / _  / _// , _/___/\ \/ ___/ __ |/ /|_/ / 
-/_/ |_/___/ /_/ /_//_/___/_/|_|   /___/_/  /_/ |_/_/  /_/  
+
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⢻⠋⡏⢛⢹⢹⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⠤⠤⠤⠤⣄⣀⣀⠀⠀⢸⣿⢸⣀⡇⢸⣾⢸⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠒⣮⣿⠛⠉⠉⠉⠉⢻⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⠟⣩⣿⣶⢰⣖⠒⣶⣼⣀⣀⣠⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢺⠀⠀⠀⠀⠀⠀⣴⣖⣲⣦⠤⣿⣿⡞⠁⠙⠛⠛⢻⡿⠁⡼⠋⢀⣈⡬⠶⠛⠋⠉⠉⠉⠉⠉⠉⢉⣩⠽⠛⣛⣽⠿⣟⣛⣛⣛⡛⠲⢤⣀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⣠⠤⣤⣀⡈⣇⠀⠀⠀⠀⢸⣿⣿⠶⠾⣿⡿⠋⢹⠀⠀⠀⣠⡏⢀⣞⡵⢞⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⣠⠖⠋⣠⢶⣻⠵⡞⣏⠁⠀⠀⠀⠉⠙⠲⣌⡑⢦⡀⠀⠀
+⠀⠀⠀⣼⢿⠵⢶⣼⣷⠛⠛⣧⣄⠀⠀⢸⣇⣿⣗⣊⣿⠖⠀⢸⠀⢶⢯⣭⠟⢋⡞⢠⠟⠀⠀⠀⠀⠀⠀⠀⠀⢀⡞⠁⣠⠞⡵⢻⡁⠀⢹⡼⡄⠀⠀⠀⠀⠀⠀⠀⠙⢦⡹⣄⠀
+⠀⠀⠀⣿⢸⠀⢾⠁⠈⣳⠞⢛⣿⣟⠶⣿⣿⣻⠿⢽⣿⣦⣀⡼⠀⢸⠶⡇⠀⢸⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⣠⠟⢀⡜⢡⡞⠁⠀⡇⠀⠀⡇⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⡹⡄
+⠀⠀⠀⠙⠛⠒⢚⣷⠞⣡⢞⡉⠀⠹⣿⣮⠙⣿⠯⠟⠉⢹⡿⣤⣀⠸⡶⣧⣀⡸⡄⢹⠀⠀⠀⠀⠀⠀⠀⢠⡟⠀⡼⢠⠏⠀⠀⠀⣷⠀⠀⡇⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢃⢻
+⠀⢀⣤⠶⢶⣴⠋⣠⢾⡇⠹⣷⣄⠀⠉⠻⣷⡼⣳⣤⣴⣿⣷⡇⢨⣽⣿⣿⠿⣝⣿⣾⣆⠀⠀⠀⠀⠀⠀⢸⠁⠀⡇⡞⠀⠀⠀⢰⠃⠀⢸⢳⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢸
+⠀⡸⠹⢾⣖⣛⣿⣅⠀⢧⠀⠈⢻⣧⡀⠀⠘⠻⣟⣻⣿⣿⣿⣿⣿⣿⣿⣿⣦⣬⡿⣿⣿⣦⡀⠀⠀⠀⠀⠘⡆⠀⡇⣇⠀⠀⣠⠋⠀⢠⢏⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢸
+⣶⠃⠀⠈⠋⢻⢴⣗⣻⣮⣷⡀⠀⢹⣟⣦⡄⠀⠈⠛⠉⡹⠉⠈⠓⢿⡿⣿⣿⣿⠷⣄⣹⡆⠙⠲⣄⡀⠀⠀⢿⠀⢧⠸⡶⠚⠁⢀⡴⢣⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⢸
+⠛⢦⡀⠀⠀⠀⢸⠋⠀⠀⢈⡿⡄⢸⣺⡀⠀⠀⠀⠀⢠⡇⡾⣦⡀⠀⠉⢿⣿⠻⣷⣮⠟⢁⣀⣀⣨⣿⣷⣤⡈⢧⠈⣇⠳⣤⠖⣩⠴⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⢁⠇
+⠀⠀⠙⢦⡀⠀⡏⠀⠀⠀⡼⠀⠙⣎⠙⣿⣾⣷⡀⠀⠘⢧⢿⣻⡇⢠⣄⠘⠿⠿⠻⠿⣼⡟⢷⣿⣿⣾⠯⠿⠋⠛⠧⣈⢦⡙⣏⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣡⠊⠀
+⠀⠀⠀⠀⠈⠻⠥⠤⠤⠼⠁⠀⠀⠘⢿⣿⡿⣏⣹⣆⠀⠀⠻⣍⠀⢸⣏⠳⡄⠀⠀⠀⠀⠑⢤⣿⣙⣟⣄⠀⠀⢠⡤⠬⠿⢿⣌⡓⢦⣄⡀⠀⠀⠀⠀⠀⠀⠀⣀⠴⣣⠞⠁⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡄⠈⢠⡾⣷⡀⠀⠈⠳⣜⢟⣾⠀⢰⣄⡀⠀⣴⣾⢿⣽⡿⣞⣆⠀⠀⢻⡋⠉⠙⢧⢻⡳⢦⣉⡑⠲⠶⠶⠶⢒⣫⠵⠛⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡇⠀⠀⠳⣝⢿⣦⠀⠀⠈⠳⣍⠀⣞⡇⢹⣶⡏⡇⠀⠙⢿⣹⣜⢦⠀⠀⠳⣄⣀⣬⣷⣷⡄⢳⡌⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣧⠀⠀⠀⠈⢦⡙⣷⠀⠀⠀⠈⠳⣝⠓⣸⢠⢇⡇⠀⠀⠀⠀⠹⣎⢧⠀⠀⠻⣄⣀⣀⣹⡿⡄⠹⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣆⠀⠀⠀⠀⢻⠃⠀⠀⠀⠀⠀⠈⠣⡍⢸⢸⠀⠀⠀⠀⠀⠀⠘⣆⢣⡀⠀⠙⣧⠴⠛⢣⠘⣄⠙⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠘⣆⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣼⡀⠀⠀⠀⠀⠀⢀⡼⣶⠗⠦⡄⠘⣆⠀⠀⣳⣸⡆⠘⣦⠀⣀⣀⣀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠘⣦⠀⠀⠹⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣄⠀⠀⠀⢀⡏⢀⠘⡆⠀⠹⣶⢮⡉⠉⠀⠀⠀⠀⠈⢯⠉⠙⣎⢻⡉⠑⢦⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⢸⠋⢧⠀⠀⠹⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢦⡀⠀⢸⢸⠋⡇⣷⠀⠀⣏⡇⣷⠤⣤⡤⠤⠤⠤⢤⡇⠀⠸⡄⢇⠀⠸⡄⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⢸⠀⠈⣧⠀⠀⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣄⠈⡞⠦⠇⡿⠀⠀⡿⡇⣹⣶⣾⡷⠖⠲⣶⣟⠀⠀⠀⡇⢸⠀⢠⠇⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡇⣸⠀⠀⡼⢳⡀⠈⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢦⡻⣄⣠⡇⣀⡴⠃⡇⢻⠀⠀⠳⣤⡤⠇⠈⢦⡀⠀⡇⢸⣧⠞⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⠀⠀⠀⡇⠀⢳⡀⢷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣄⠉⠉⠁⡀⠀⡇⢈⣀⣁⡀⢉⣀⣉⣉⣉⣷⡀⡇⢸⡇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡇⠀⠀⡇⠀⠀⣿⡜⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢦⡀⠀⠙⢦⡇⠘⠒⠒⠒⠒⠒⠒⠒⠒⠺⠟⠃⢸⣇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡀⢰⠇⠀⠀⢸⠻⡜⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠱⣄⠀⠀⠉⠉⠉⠉⠉⠉⠉⠉⠉⠛⠛⠛⠉⠉⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠉⠀⠀⠀⢸⠂⠙⡎⠷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣀⣀⣀⡈⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
 @AETHER-SPAM
     
 [Author   : Aether]
 [Telegram : @a37h3r]
-[Github   : https://github.com/ZawwanZ/]
+[Github   : https://github.com/Aether-0/]
 [Facebook : https://www.facebook.com/Phoenixop0]
 
 
@@ -159,7 +184,7 @@ if __name__ == "__main__":
     # Prompt user for input
     itype = input(random.choice(colors)+"[0] Enter '1' for email or '2' for SMS: " + Fore.RESET)
     stype = "/api/send-email-otp" if itype == '1' else "/api/send-phone-otp"
-    phone_number = input(random.choice(colors)+"Enter your email address: "+Fore.RESET) if itype == '1' else input(random.choice(colors)+"Enter your phone number: "+ Fore.RESET)
+    phone_number = input(random.choice(colors)+"[⌖]Enter your target's email address: "+Fore.RESET) if itype == '1' else input(random.choice(colors)+"[⌖]Enter your target's phone number: "+ Fore.RESET)
 # Set global data variable based on user input
     if itype == '1':
         data = {"email": phone_number}
@@ -171,6 +196,6 @@ if __name__ == "__main__":
     # phone_number = input(random.choice(colors) + "[*] Enter Target Email or Phone Number :" + Fore.RESET)
     num_threads = int(input(random.choice(colors) + "[x] Enter number of threads: " + Fore.RESET))
     num_requests_per_thread = int(input(random.choice(colors) + "[=] Enter number of requests per thread: " + Fore.RESET))
-    proxy_option = input(random.choice(colors) + "Select proxy source (list file[f], link[l], manually[m], default[enter]): " + Fore.RESET).lower()
+    proxy_option = input(random.choice(colors) + "[✒] Select proxy source (list file[f], link[l], manually[m], default[enter]): " + Fore.RESET).lower()
 
     main(phone_number, num_threads, num_requests_per_thread, proxy_option)
